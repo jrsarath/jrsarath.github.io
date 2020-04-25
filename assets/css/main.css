@@ -1,0 +1,100 @@
+/*
+    Jr Creative - main.scss
+    Copyright © 2020 - Jr Sarath
+    https://github.com/jrsarath
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+}
+
+/* Loader Section */
+.loader {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.main .content {
+    width: 100%;
+}
+
+.main .content h1 {
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.footer .social-icons {
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.footer .social-icons .facebook {
+    color: rgb(66, 103, 178);
+}
+
+.footer .social-icons .twitter {
+    color: rgb(29, 161, 242);
+}
+
+.footer .social-icons .github {
+    color: rgb(36, 41, 46);
+}
+
+.footer .social-icons a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #212121;
+    text-decoration: none !important;
+}
+
+.footer .social-icons a span {
+    margin-left: -25px;
+}
+.footer .social-icons a i {
+    font-size: 50px;
+    opacity: 0.2;
+}
+.footer .social-icons .facebook span {
+    text-shadow: 0px 0 5px rgba(66, 103, 178, 0.5);
+}
+.footer .social-icons .twitter span {
+    text-shadow: 0px 0 5px rgba(29, 161, 242, 0.5);
+}
+.footer .social-icons .github span {
+    text-shadow: 0px 0 5px rgba(36, 41, 46, 0.5);
+}

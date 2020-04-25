@@ -6,6 +6,6 @@
 
 $(document).ready(() => {
     setTimeout(() => {
-       $(".loader").fadeOut('slow'); 
+       $(".loader").fadeOut('slow');
     }, 5000);
 })

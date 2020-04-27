@@ -34,16 +34,30 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
+    font-family: 'Raleway', sans-serif !important;
 }
 .main .content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .main .content h1 {
     font-size: 70px;
     font-weight: normal;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.main .content .persona {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+.main .content .persona li {
+    margin: 20px;
+    font-size: 20px;
 }
 
 /* Footer Section */

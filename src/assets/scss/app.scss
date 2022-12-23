@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap');
 @import 'reset.css';
 
 html {
@@ -29,18 +31,37 @@ html {
           align-content: center;
           width: 100%;
           .content {
+            font-family: 'Montserrat', sans-serif;
             font-size: 5rem;
+            line-height: 5rem;
             color: #212121;
             z-index: 3;
             position: absolute;
+            margin-top: -70px;
+            &::after {
+              content: "";
+              position: absolute;
+              top: -10px;
+              left: -10px;
+              height: calc(100% + 30px);
+              width: calc(100% + 20px);
+              background-color: #ffffff;
+              z-index: -1;
+              filter: blur(40px);
+              @media (prefers-color-scheme: dark) {
+                background-color: #212121;
+              }
+            }
             @media (prefers-color-scheme: dark) {
               color: #ffffff;
             }
           }
           .overlay {
+            font-family: 'Kumar One Outline', cursive;
             z-index: 2;
             color: #ffffff;
             font-size: 15rem;
+            line-height: 15rem;
             @media (prefers-color-scheme: dark) {
               color: #ffffff;
             }

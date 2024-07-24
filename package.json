@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "yarn build && git add dist/ && git commit -m \"Deploy Github Pages\" && git subtree push -f --prefix dist https://github.com/jrsarath/jrsarath.github.io deployment"
+    "deploy": "yarn build && git add dist/ && git commit -m \"Deploy Github Pages\" && git subtree push --prefix dist https://github.com/jrsarath/jrsarath.github.io deployment"
   },
   "dependencies": {
     "react": "^18.2.0",

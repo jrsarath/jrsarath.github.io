@@ -1,16 +1,18 @@
+import React from 'react';
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Home from './pages/Home';
+import Aura from './pages/Aura';
 import './assets/scss/app.scss'
 
 const App: React.FC = () => {
-    const handleOnClick = () => {
-        window.open("mailto:jrsarath@outlook.com")
-    }
     return (
-        <div className="wrapper">
-            <div className="name" onClick={handleOnClick}>
-                <h1 className="content">Sarath Singh</h1>
-                <h1 className="overlay">DELTA</h1>
-            </div>
-        </div>
+        <Routes>
+            <Route path="/" element={<></>}>
+                <Route index element={<Home />} />
+                <Route path="aura" element={<Aura />} />
+                {/* <Route path="*" element={<NoMatch />} /> */}
+            </Route>
+        </Routes>
     )
 }
 

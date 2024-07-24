@@ -7,7 +7,7 @@ import './assets/scss/app.scss'
 const App: React.FC = () => {
     return (
         <Routes>
-            <Route path="/" element={<></>}>
+            <Route path="/" element={<Home />}>
                 <Route index element={<Home />} />
                 <Route path="aura" element={<Aura />} />
                 {/* <Route path="*" element={<NoMatch />} /> */}

@@ -11,7 +11,7 @@ const Aura: NextPage = () => {
                     layout="responsive"
                     src="images/aura.svg"
                     alt="Aura"
-                    className="w-full dark:invert"
+                    className="w-full max-w-[400px] dark:invert"
                 />
                 <h1 className="mt-4 text-black font-light text-[2rem] dark:text-white">Check back later</h1>
             </div>
